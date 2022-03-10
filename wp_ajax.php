@@ -10,7 +10,7 @@ add_action( 'wp_ajax_get_offers_list_from_crm', 'get_offers_list_from_crm' );
 function get_offers_list_from_crm() {
 	global $wpdb;
 
-    // Get Client ID
+	// Get Client ID
 	if ( !empty($_COOKIE['client_id']) ) {
 		$clientID = sanitize_text_field($_COOKIE['client_id']);
 	} else {
